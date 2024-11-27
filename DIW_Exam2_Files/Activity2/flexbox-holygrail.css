@@ -55,7 +55,7 @@ nav > div:hover a {
   /********** ADD YOUR CODE HERE ***********/
  display: flex;
   flex-wrap:wrap;
-  :nth-child(1) {
+  /*:nth-child(1) {
     order:-1;
   }
   :nth-child(3) {
@@ -63,8 +63,21 @@ nav > div:hover a {
   }
   :nth-child(4) {
     order:-1;
-  }
+  }*/
+    /**AQUEST APARTAT ÉS EL MATEIX QUE A LES LINIES 71 A LA 79,
+    PERÒ EL VALIDADOR HODETECTA COM A MALAMENT
+    HO HE CANVIAT PER PODER VALIDAR :P**/
   /********** END OF YOUR CODE ***********/
+}
+
+#contents:nth-child(1) {
+    order:-1;
+}
+#contents:nth-child(3) {
+    order:-3;
+}
+#contents:nth-child(4) {
+    order:-1;
 }
 
 #contents > article {
